@@ -1,0 +1,502 @@
+/* style.css */
+
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #575353, #dddada);
+  /* color: rgb(0, 0, 0); */
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-bottom: 50px;
+}
+
+
+
+.logo {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding-bottom: 50px;
+
+}
+
+.logomain{
+    text-decoration: line-through;
+    font-size: 4.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(93, 92, 92);
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(55, 45, 45);
+  font-family: Georgia, 'Times New Roman', Times, serif
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fdf6fd;
+  text-decoration: black
+}
+
+/* Hero Section */
+.hero {
+  background: url("essential-oil-diffuser-2048px-4244-2x1-1.webp") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(249,249,249,1) 0%, rgba(249,249,249,0) 20%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.meet{
+    height: 38px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    border-radius: 20px;
+    background-color: transparent;
+    margin-bottom: 2.21rem;
+}
+    
+    
+
+.cta {
+  background: #939090;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background: #575353;
+  color: black;
+}
+
+
+/* Features */
+
+
+.features {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  border: solid rgb(100, 96, 96) 1.5px;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+
+.why{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: #f3e8ff;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: #e0c6ff;
+}
+
+/* Fragrances */
+.fragrances {
+  padding: 4rem 2rem;
+  background: #fdf6fd;
+  text-align: center;
+  background-image: url("pastel2.avif");
+  border-radius: 10px;
+  background-size: cover;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.fragrance-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  /* margin-top: 2rem; */
+}
+
+.fragrance-item {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 200px;
+    width: 200px;
+  /* padding: 1.5rem 2rem; */
+  /* border-radius: 8px; */
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.fragrance-item:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.lavender:hover{
+  color: blue;
+  border: solid blue 2px;
+}
+.citrus:hover{
+    color: lime;
+    border: solid lime 2px;
+}
+
+.mint:hover{
+    color:green;
+    border: solid green 2px;
+}
+
+.rose:hover{
+    color: red;
+    border: solid red 2px;
+
+}
+
+.bottom{
+    margin: 0;
+    padding-right: 11px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+.lavender {
+  background-image: url("lavedit.png");
+  background-size: cover;
+  /* border-left: solid black 3px;
+  border-right: solid black 3px; */
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.citrus {
+  background-image: url("citrus.png");
+  background-size: cover;
+   /* border-left: solid black 5px;
+  border-right: solid black 5px; */
+   margin-right: 20px;
+     border-radius: 5px;
+
+}
+.mint {
+  background-image: url("mint.png");
+  background-size: cover;
+   /* border-left: solid black 5px;
+  border-right: solid black 5px; */
+   margin-right: 20px;
+     border-radius: 5px;
+
+
+}
+.rose {
+    background-image: url("rose.png");
+  background-size: cover;
+    /* border-left: solid black 5px;
+  border-right: solid black 5px; */
+   margin-right: 20px;
+     border-radius: 5px;
+
+}
+
+.frag{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* Make modal hidden by default */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Show when targeted */
+.modal:target {
+  display: block;
+}
+
+/* Modal content */
+.modal-box {
+  background: white;
+  padding: 20px;
+  margin: 10% auto;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+/* rev  */
+
+
+ .rev{
+  padding: 4rem 2rem;
+  /* background-image: url("pastel2.avif");
+  background-size: cover; */
+  text-align: center;} 
+
+  .revs{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+
+ .review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+    border-bottom: solid black 2px;
+
+}
+
+.review {
+  background: #f1f1f1;
+  padding: 1.5rem;
+  margin: 50px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+} 
+
+
+
+
+
+
+
+/* Reviews */
+ .reviews {
+  padding: 2rem 2rem;
+  /* background-image: url("pastel2.avif");
+  background-size: cover; */
+  text-align: center;
+} 
+
+/* .review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.review {
+  background: #f1f1f1;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+} */ 
+
+/* about us */
+
+
+.abbout{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+}
+
+.aboutus{
+    font-weight: 500;
+}
+
+/* Contact */
+
+.contactus{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.contact {
+  padding: 3rem 2rem;
+  background: #eee5f7;
+  text-align: center;
+  font-size: 1rem;
+    border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  padding: 1.5rem 2rem;
+  background: #61696a;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .cta {
+    padding: 0.5rem 1rem;
+  }
+
+ .navbar {
+    flex-wrap: wrap; /* Allow wrapping inside navbar */
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links a {
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  /* .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  } */
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
