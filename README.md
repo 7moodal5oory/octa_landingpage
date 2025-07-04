@@ -20,6 +20,19 @@ The goal was to design a visually appealing landing page for a random topic usin
 ![Pic 5](screenshots/SCS5.png)  
 ![Pic 6](screenshots/SCS6.png)
 
+```plaintext
+INTERN/
+├── index.html
+├── style.css
+├── README.md
+└── screenshots/
+    ├── SCS1.png
+    ├── SCS2.png
+    ├── SCS3.png
+    ├── SCS4.png
+    ├── SCS5.png
+    └── SCS6.png
+
 
 
 
